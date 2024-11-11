@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="images/1.png" alt="Inner Calm Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"> </i>Home</a></li>
+                <li><a href="feedback.html"><i class="fas fa-info-circle"></i> Feedback</a></li>
+                <li><a  href="games.html"> Games</a></li>
+                <li><a href="ourteam.html"><i class="fas fa-heart"></i> Our Teams</a></li>
+                <li><a href="contact.html"><i class="fas fa-users"></i> Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="profile-section">
+            <div class="profile-link">
+                <a href="profile.html">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="settings.html">My Profile</a>
+                    <a href="update.html">Update</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main class="feedback-section">
+        <h1>We Value Your Feedback</h1>
+        <p>
+            Your thoughts and experiences help us improve CalmMind. Please feel free to share any feedback or suggestions you may have. We appreciate your time and commitment to helping us make CalmMind even better for everyone.
+        </p>
+
+        <form class="feedback-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts"></textarea>
+
+            <button type="submit" class="btn submit-btn">Submit Feedback</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CalmMind. All rights reserved.</p>
+    </footer>
+</body>
+</html>

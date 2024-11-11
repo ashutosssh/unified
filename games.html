@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxation Games | Mano Sewa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script> 
+    <script src="js/bubble.js" defer></script> 
+    <script src="js/coloring.js" defer></script> 
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="images/1.png" alt="Inner Calm Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"> </i>Home</a></li>
+                <li><a href="feedback.html"><i class="fas fa-info-circle"></i> Feedback</a></li>
+                <li><a  href="games.html"> Games</a></li>
+                <li><a href="ourteam.html"><i class="fas fa-heart"></i> Our Teams</a></li>
+                <li><a href="contact.html"><i class="fas fa-users"></i> Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="profile-section">
+            <div class="profile-link">
+                <a href="profile.html">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="settings.html">My Profile</a>
+                    <a href="update.html">Update</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main>
+        <h1>Relaxation Games</h1>
+
+        <div class="game-selection">
+            <p>Select a game to begin:</p>
+            <button class="game-btn" data-game="bubble">Breathing Bubble Game</button>
+            <button class="game-btn" data-game="coloring">Mindful Coloring Game</button>
+        </div>
+
+        <div class="game-container" id="bubble-container" style="display: none;">
+            <h2>Breathing Bubble Game</h2>
+            <div id="instructions"></div>
+            <div id="bubble"></div>
+        </div>
+
+        <div class="game-container" id="coloring-container" style="display: none;">
+            <h2>Mindful Coloring Game</h2>
+            <canvas id="coloringCanvas" width="500" height="400"></canvas>
+            <div id="color-palette">
+                <button style="background-color: red;" onclick="changeColor('red')"></button>
+                <button style="background-color: green;" onclick="changeColor('green')"></button>
+                <button style="background-color: blue;" onclick="changeColor('blue')"></button>
+                <button style="background-color: yellow;" onclick="changeColor('yellow')"></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 ManoSewa. All rights reserved. <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

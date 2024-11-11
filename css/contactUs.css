@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 90px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family:MonoLisa;
+}
+.tranquil {
+    color: #f4a11d; 
+}
+
+.ease {
+    color: #030d3ce3; 
+}
+nav{
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3d2672;
+    padding: 10px;
+}
+nav ul li a.active {
+    border-bottom: 2px solid #3d2672;
+}
+
+dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); 
+    width: 120px; 
+    background-color: #fff;
+    transform: translateX(-30%);
+    border: 1px solid #e0e0e0; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none; 
+}
+
+.dropdown-content li a {
+    display:block;
+    padding: 12px 16px; 
+    text-decoration: none; 
+    font-size: 14px; 
+    margin:0;
+}
+
+.dropdown-content li a:hover { 
+    color: #ff6600;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.user-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.contact-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1.5px;
+    height: 80%;
+    background-color: #ccc; 
+}
+
+.contact-info {
+    width: 45%;
+    margin-top: -50px;
+    padding-right:20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    
+}
+
+.contact-info .map {
+    margin-top: 20px;
+}
+
+.mapimg{
+    height:70%;
+    width:90%;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    margin-top: -40px;
+    font-size: 25px; 
+}
+.contact-form {
+    width: 45%; 
+    padding-left: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    align-self:center;
+
+}
+
+.contact-form button:hover {
+    background-color: rgba(255, 166, 0, 0.84);
+}
+
+footer {
+    background-color: #3d267227;
+    padding: 20px 50px;
+    margin-top: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    justify-content:right;
+    margin-left: 50%;
+    gap: 40px;
+}
+
+.column h4 {
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.column ul {
+    list-style: none;
+    margin-left: 10px;
+}
+.column ul li {
+    margin-bottom: 10px; 
+}
+
+
+.column ul li a {
+    color: #333;
+    text-decoration: none;
+    margin-left: -50px;
+    margin-top: -10px;
+    
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+}
+.newsletter h4 {
+    margin-top: -30px; 
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    
+}
+
+.newsletter button:hover {
+    background-color: #555;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 60px; 
+    margin-top: -160px; 
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+
+}
